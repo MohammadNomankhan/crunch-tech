@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #000;
+	line-height: 1.5;
+}
+
+a {
+	color: currentColor;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.logo{
+	text-transform: uppercase;
+	padding: 1rem;
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+.navbar{
+	color: #fff;
+	background-color: #073068;
+	display: flex;
+	justify-content: space-around;
+	/*padding: 10px;*/
+
+}
+.items{
+	display: flex;
+	/*justify-content: space-between;*/
+}
+.items li {
+	cursor: pointer;
+} 
+.item{
+	list-style: none;
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: 300;
+	opacity: 0.6;
+}
+
+.item:hover {
+	opacity: 1;
+	transform: translateY(-2px);
+}
+
+.wallpaper{
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 4.5rem;
+	left: 0;
+	background-image: url(https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29ybGR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	opacity: 0.3;
+}
+
+.primary-header{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.hero-section{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.primary-pre{
+	font-weight: 500;
+}
+
+.primary-main{
+	padding: 1.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 60px;
+	letter-spacing: 4px;
+}
+.primary-main-sub{
+	color: #073068;
+	border-bottom: 0.25rem solid #073068;
+}
+
+.primary-post{
+	font-weight: 400;
+}
+
+.button{
+	background-color: #073068;
+	color: #fff;
+	border-radius: 12032002px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 1.5rem;
+	vertical-align: top;
+	font-size: 0.875rem;
+	line-height: 1;
+	padding: 1.25em 2em;
+	letter-spacing: 0.3em;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	transition-property: box-shadow, transform;
+
+}
+
+.button:hover {
+	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+	transform: scale(1.02) translateY(-4px);
+}
+.button:active {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+	transform: scale(0.98) translateY(-2px);
+}
+
